@@ -11,10 +11,13 @@
         android:theme="@style/Theme.Rendu_epsi_b3">
         <activity
             android:name=".MainActivity"
+            android:exported="false"/>
+
+        <activity
+            android:name=".SplashActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
