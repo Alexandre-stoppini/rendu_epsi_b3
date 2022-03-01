@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:gravity="center"
+        android:text="@string/create_accout"
+        android:textAlignment="center"
+        android:textSize="20sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_marginTop="40dp">
+
+            <EditText
+                android:id="@+id/get_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/Name_hint"
+                android:inputType="none"
+                android:textAlignment="center"
+                android:layout_marginBottom="15dp"/>
+
+            <EditText
+                android:id="@+id/get_forname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/forname_hint"
+                android:inputType="none"
+                android:textAlignment="center"
+                android:layout_marginBottom="15dp"/>
+
+            <EditText
+                android:id="@+id/get_mail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/email_hint"
+                android:inputType="none"
+                android:textAlignment="center"
+                android:layout_marginBottom="15dp" />
+
+            <EditText
+                android:id="@+id/get_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/addresse_hint"
+                android:inputType="none"
+                android:textAlignment="center"
+                android:layout_marginBottom="15dp" />
+
+            <EditText
+                android:id="@+id/get_zip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/zip_hint"
+                android:inputType="none"
+                android:textAlignment="center"
+                android:layout_marginBottom="15dp" />
+
+            <EditText
+                android:id="@+id/get_city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/city_hint"
+                android:inputType="none"
+                android:textAlignment="center"
+                android:layout_marginBottom="15dp" />
+
+            <EditText
+                android:id="@+id/get_card"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/fidelity_hint"
+                android:inputType="none"
+                android:textAlignment="center"
+                android:layout_marginBottom="15dp" />
+
+            <Button
+                android:id="@+id/create_user"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:text="@string/create_user"
+                android:textSize="11sp" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

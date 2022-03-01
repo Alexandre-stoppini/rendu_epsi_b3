@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">rendu_epsi_b3</string>
+    <string name="create_accout">Création de compte</string>
+    <string name="create_user">Créer</string>
+    <string name="Name_hint">Nom</string>
+    <string name="forname_hint">Prénom</string>
+    <string name="email_hint">Email</string>
+    <string name="addresse_hint">Adresse</string>
+    <string name="zip_hint">Code Postal</string>
+    <string name="city_hint">Ville</string>
+    <string name="fidelity_hint">Carte de fidélité</string>
+    <string name="redirect_form">Remplir le formulaire manuellement</string>
 </resources>
