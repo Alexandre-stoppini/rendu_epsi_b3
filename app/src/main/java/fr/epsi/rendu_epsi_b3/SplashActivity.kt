@@ -19,7 +19,7 @@ class SplashActivity : BaseActivity() {
                 startActivity(newIntent)
                 finish()
             } else {
-                val newIntent = Intent(application, CarteActivity::class.java)
+                val newIntent = Intent(application, TabbarActivity::class.java)
                 startActivity(newIntent)
                 finish()
             }

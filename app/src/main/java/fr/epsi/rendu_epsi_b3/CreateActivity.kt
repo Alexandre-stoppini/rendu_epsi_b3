@@ -6,7 +6,6 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import android.widget.EditText
-import android.widget.TextView
 
 class CreateActivity :  BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -30,7 +29,7 @@ class CreateActivity :  BaseActivity() {
             writeNewUser("zipCode", get_zipCode.text.toString())
             writeNewUser("city", get_city.text.toString())
             writeNewUser("fidelitycard", get_fidelitycard.text.toString())
-            val newIntent = Intent(application, CarteActivity::class.java)
+            val newIntent = Intent(application, TabbarActivity::class.java)
             startActivity(newIntent)
         })
     }

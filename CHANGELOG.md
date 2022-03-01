@@ -1,4 +1,22 @@
 ## Added
+- Création des trois fragment
+
+## TODO:
+### Inscription :
+- Lecture de QR code
+- Récupération des informations à partir du QR code
+
+### Fragements
+~~- Création des fragements~~
+- Ajout d'un bandeau supérieur contenant un logo au centre + svg à droite
+- Fragment "Carte" == Fragment par défaut, doit contenir le nom + prenom de l'user, un code barre
+- Fragment magasin, doit contenir la carte de google Maps avec les points renseigné, chaque magasin aura ses infos updates depuis un fichier json récupéré ici https://djemam.com/epsi/stores.json
+- Fragment offres, doit contenir une liste d'images avec une description du produit et son nom. Se base sur https://djemam.com/epsi/offers.json
+- Chaque élement sur magasins peut être cliqué pour avoir des infos en +
+- Si clique sur svg haut et à droite alors accès à interface de modification de compte
+***
+
+## Added
 - Ajout du menu correspondant au choix d'insertion de données pour la création de l'utilisateur
 - Méthode d'ajout manuel des informations relatives à l'utilisateur
 - Methode de stockage des informations de l'utilisateur dans des dossiers de l'appli

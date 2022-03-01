@@ -10,4 +10,7 @@
     <string name="city_hint">Ville</string>
     <string name="fidelity_hint">Carte de fidélité</string>
     <string name="redirect_form">Remplir le formulaire manuellement</string>
+    <string name="card">Carte</string>
+    <string name="offer">Offres</string>
+    <string name="store">Magasins</string>
 </resources>
