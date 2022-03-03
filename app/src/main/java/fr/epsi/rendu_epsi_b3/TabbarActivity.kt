@@ -1,7 +1,11 @@
 package fr.epsi.rendu_epsi_b3
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
+import android.widget.Button
+import android.widget.ImageButton
+import android.widget.ImageView
 import android.widget.TextView
 
 class TabbarActivity : BaseActivity() {
@@ -15,6 +19,12 @@ class TabbarActivity : BaseActivity() {
         val tab_card = findViewById<TextView>(R.id.tab_card)
         val tab_offer = findViewById<TextView>(R.id.tab_offer)
         val tab_store = findViewById<TextView>(R.id.tab_store)
+        val modif_user = findViewById<Button>(R.id.button_to_modif)
+
+        modif_user.setOnClickListener(View.OnClickListener {
+            val newIntent= Intent(application, ModifCompteActivity::class.java)
+            startActivity(newIntent)
+        })
 
         tab_card.setOnClickListener(View.OnClickListener {
             show_card()
@@ -25,7 +35,6 @@ class TabbarActivity : BaseActivity() {
         tab_store.setOnClickListener(View.OnClickListener {
             show_store()
         })
-
         show_card()
     }
 

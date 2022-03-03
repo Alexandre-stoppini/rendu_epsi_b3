@@ -12,7 +12,10 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Rendu_epsi_b3">
+        android:theme="@style/AppTheme.NoActionBar">
+        <activity
+            android:name=".ModifCompteActivity"
+            android:exported="false" />
         <activity
             android:name=".StoreActivity"
             android:exported="false" />

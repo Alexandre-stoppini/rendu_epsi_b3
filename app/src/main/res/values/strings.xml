@@ -13,4 +13,5 @@
     <string name="card">Carte</string>
     <string name="offer">Offres</string>
     <string name="store">Magasins</string>
+    <string name="save_modifications">J\'enregistre les modifications</string>
 </resources>

@@ -1,4 +1,24 @@
 ## Added
+- Création du bouton de retour
+- Création de la fonctionnalité permettant de modifier les infos de son compte
+- Ajout des nom et premon + numéro de carte de l'user sur le fragment de carte
+
+## TODO:
+### Inscription :
+- Lecture de QR code
+- Récupération des informations à partir du QR code
+
+### Fragements
+- Ajouter code barre de carte de fidélité dans fragment carte
+~~- Ajout d'un bandeau supérieur contenant un logo au centre + svg à droite~~
+~~- Fragment "Carte" == Fragment par défaut, doit contenir le nom + prenom de l'user, un code barre~~
+- Fragment magasin, doit contenir la carte de google Maps avec les points renseigné, chaque magasin aura ses infos updates depuis un fichier json récupéré ici https://djemam.com/epsi/stores.json
+- Fragment offres, doit contenir une liste d'images avec une description du produit et son nom. Se base sur https://djemam.com/epsi/offers.json
+- Chaque élement sur magasins peut être cliqué pour avoir des infos en +
+~~- Si clique sur svg haut et à droite alors accès à interface de modification de compte~~
+***
+
+## Added
 - Création des trois fragment
 
 ## TODO:

@@ -1,9 +1,11 @@
 package fr.epsi.rendu_epsi_b3
 
+import android.content.Context
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.TextView
 import androidx.fragment.app.Fragment
 
 private const val ARG_PARAM1 = "param1"
@@ -34,7 +36,19 @@ class CardFragment : Fragment(){
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        val name: TextView = view.findViewById(R.id.name)
+        val forname: TextView = view.findViewById(R.id.forname)
+        name.setText(readSharedPreference("name"))
+        forname.setText(readSharedPreference("forname"))
+    }
 
+    fun readSharedPreference(key : String) : String{
+        activity?.let {
+            val sharedPreferences=it.getSharedPreferences("user", Context.MODE_PRIVATE)
+            val txt=sharedPreferences.getString(key, "Not found")
+            return txt.toString()
+        }
+        return "Not Found"
     }
 
     companion object {
