@@ -1,4 +1,17 @@
 ## Added
+- Ajout des offres sur le fragment concerné. Fragment terminé
+## TODO:
+### Inscription :
+- Lecture de QR code
+- Récupération des informations à partir du QR code
+
+### Fragements
+- Ajouter code barre de carte de fidélité dans fragment carte
+- Fragment magasin, doit contenir la carte de google Maps avec les points renseigné, chaque magasin aura ses infos updates depuis un fichier json récupéré ici https://djemam.com/epsi/stores.json
+~~- Fragment offres, doit contenir une liste d'images avec une description du produit et son nom. Se base sur https://djemam.com/epsi/offers.json~~
+- Chaque élement sur magasins peut être cliqué pour avoir des infos en +
+***
+## Added
 - Création du bouton de retour
 - Création de la fonctionnalité permettant de modifier les infos de son compte
 - Ajout des nom et premon + numéro de carte de l'user sur le fragment de carte

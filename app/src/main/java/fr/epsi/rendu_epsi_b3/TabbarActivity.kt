@@ -4,9 +4,12 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
-import android.widget.ImageButton
-import android.widget.ImageView
 import android.widget.TextView
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
+import okhttp3.*
+import org.json.JSONObject
+import java.io.IOException
 
 class TabbarActivity : BaseActivity() {
     val CardTab = CardFragment()
@@ -25,6 +28,7 @@ class TabbarActivity : BaseActivity() {
             val newIntent= Intent(application, ModifCompteActivity::class.java)
             startActivity(newIntent)
         })
+
 
         tab_card.setOnClickListener(View.OnClickListener {
             show_card()
@@ -51,6 +55,44 @@ class TabbarActivity : BaseActivity() {
         trans.replace(R.id.contentLayout, OfferFragment::class.java, null)
         trans.setReorderingAllowed(true)
         trans.addToBackStack("")
+//        val offers = arrayListOf<Offer>()
+//
+//        val okHttpClient: OkHttpClient = OkHttpClient.Builder().build()
+//        val mRequestURL = "https://djemam.com/epsi/offers.json"
+//        val request = Request.Builder()
+//            .url(mRequestURL)
+//            .get()
+//            .cacheControl(CacheControl.FORCE_NETWORK)
+//            .build()
+//
+//        okHttpClient.newCall(request).enqueue(object : Callback {
+//            override fun onFailure(call: Call, e: IOException) {
+//                val a=1
+//                TODO("Not yet implemented")
+//            }
+//
+//            override fun onResponse(call: Call, response: Response) {
+//                val data = response.body?.string()
+//                if (data != null){
+//                    val jsonObject = JSONObject(data)
+//                    val jsArray = jsonObject.getJSONArray("items")
+//                    for (i in 0 until jsArray.length()) {
+//                        val jsOffer = jsArray.getJSONObject(i)
+//                        val name = jsOffer.optString("name", "")
+//                        val description = jsOffer.optString("description", "")
+//                        val picture_url = jsOffer.optString("picture_url", "")
+//                        val offer = Offer(name, description, picture_url)
+//                        offers.add(offer)
+//                    }
+//
+//                }
+//
+//            }
+//        })
+//        val recyclerView = findViewById<RecyclerView>(R.id.recyclerViewOffer)
+//        recyclerView.layoutManager = LinearLayoutManager(this@TabbarActivity)
+//        val offerAdaptater = OfferAdaptater(this, offers)
+//        recyclerView.adapter = offerAdaptater
         trans.commit()
     }
 
