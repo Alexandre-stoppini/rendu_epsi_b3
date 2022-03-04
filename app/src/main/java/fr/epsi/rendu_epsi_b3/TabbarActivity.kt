@@ -99,7 +99,7 @@ class TabbarActivity : BaseActivity() {
 
     private fun show_store() {
         val trans = supportFragmentManager.beginTransaction()
-        trans.replace(R.id.contentLayout, StoreFragment::class.java, null)
+        trans.replace(R.id.contentLayout, StoreActivity::class.java, null)
         trans.setReorderingAllowed(true)
         trans.addToBackStack("")
         trans.commit()

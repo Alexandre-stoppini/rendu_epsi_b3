@@ -1,5 +1,26 @@
 ## Added
 
+- Ajout du fragment map.
+- Les cartes de details des magasins sont prêtes, impossibilité d'accéder à celle ci cependant
+
+## TODO:
+
+### Inscription :
+
+- Lecture de QR code
+- Récupération des informations à partir du QR code
+
+### Fragements
+
+- Ajouter code barre de carte de fidélité dans fragment carte
+- Fragment magasin, doit contenir la carte de google Maps avec les points renseigné, chaque magasin
+  aura ses infos updates depuis un fichier json récupéré ici https://djemam.com/epsi/stores.json
+- Chaque élement sur magasins peut être cliqué pour avoir des infos en +
+
+***
+
+## Added
+
 - Ajout Logo + image d'accès aux comptes
 
 ## TODO:

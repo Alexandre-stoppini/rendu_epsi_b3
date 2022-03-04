@@ -1,6 +1,7 @@
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
+    id 'com.google.android.libraries.mapsplatform.secrets-gradle-plugin'
 }
 
 android {
@@ -44,5 +45,7 @@ dependencies {
     implementation 'com.google.mlkit:barcode-scanning:17.0.2'
     implementation 'com.squareup.picasso:picasso:2.71828'
     implementation("com.squareup.okhttp3:okhttp:4.9.0")
+
+
 
 }
