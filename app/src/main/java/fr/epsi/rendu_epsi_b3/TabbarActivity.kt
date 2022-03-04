@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -22,7 +23,7 @@ class TabbarActivity : BaseActivity() {
         val tab_card = findViewById<TextView>(R.id.tab_card)
         val tab_offer = findViewById<TextView>(R.id.tab_offer)
         val tab_store = findViewById<TextView>(R.id.tab_store)
-        val modif_user = findViewById<Button>(R.id.button_to_modif)
+        val modif_user = findViewById<ImageView>(R.id.button_to_modif)
 
         modif_user.setOnClickListener(View.OnClickListener {
             val newIntent= Intent(application, ModifCompteActivity::class.java)

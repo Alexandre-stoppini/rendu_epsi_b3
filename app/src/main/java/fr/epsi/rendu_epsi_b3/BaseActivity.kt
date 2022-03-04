@@ -4,12 +4,11 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import org.w3c.dom.Text
 
 open class BaseActivity : AppCompatActivity() {
 
     fun setHeaderTitle(txt: String) {
-        val textViewTitle = findViewById<TextView>(R.id.textViewTitle)
+        val textViewTitle = findViewById<TextView>(R.id.ImageLogo)
         textViewTitle.text = txt
     }
 
